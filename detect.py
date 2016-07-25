@@ -88,7 +88,8 @@ def main():
                                 #if len(face) == 2:
                                 #       show_pic(roi_images[-1], str(h)+str(w))
                                 # append first image with neutral class, else append peak expression
-                                face_type.append('NE' if n == 0 else expression)
+                                expression = 'NE' if n == 0 else row['expression']
+                                face_type.append(expression)
                                 filenames.append(subject+"."+expression+str(abs(n))+"."+folder[-1])
         # cv2.startWindowThread()
         # for i in range(len(roi_images)):
