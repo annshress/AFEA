@@ -20,7 +20,7 @@ x = 0
 y = 0
 
 subject = raw_input("Enter your first name (first four letters) : ")
-print "MAINTAIN APPROPRIATE DISTANCE :: "
+print "MAINTAIN APPROPRIATE DISTANCE :: face size on-screen would be better arround 200x200 (approximate)"
 print "press ' q ' to quit"
 print "enter the number for particular expression you will be showing to the camera."
 for k in iter(classes):
