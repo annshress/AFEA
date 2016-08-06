@@ -18,7 +18,7 @@ sys.setrecursionlimit(5000)
 
 images, classes, filenames = detect.main()
 
-d = {'DI': 0, 'NE': 1, 'SU': 2, 'AN': 3, 'FE': 4, 'SA': 5, 'HA': 6}
+d = {'DI': 0, 'CO':0, 'NE': 1, 'SU': 2, 'AN': 3, 'FE': 4, 'SA': 5, 'HA': 6}
 
 X = images
 y = [d[i] for i in classes]

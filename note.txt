@@ -1,0 +1,33 @@
+the values of 246 have better visualization
+
+accuracies
+clf234 - 50, 48
+clf246 - 68, 69
+clf248 - 68.7, 69
+clf345 - 60, 60
+clf 357 - 70, 71
+
+normalization variation
+norm = l1
+
+axis = 1
+70 - 80% acc on 248 wavelets
+
+axis = 0 normalize in features
+60 - 70% acc on 248 wavelets
+
+clf1 = OVR(svm.SVC(gamma = 0.7, C = 1.0, decision_function_shape = 'ovr')) # default kernel is rbf
+acc 72 69
+clf2 = OVO(svm.SVC(gamma = 0.7, C = 1.0, decision_function_shape = 'ovo'))
+acc 23 23 
+
+SO USING OVR  
+clf1 changing C values
+C = 0.2 acc 70 69
+C = 0.3 acc 71
+C = 0.4 acc 67
+C = 0.5 acc 69 67
+C = 0.6 acc 71 70
+onevsone seem to have low accuracy
+
+...testing needs to be done on live cam
